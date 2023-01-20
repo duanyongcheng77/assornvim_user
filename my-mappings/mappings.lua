@@ -11,6 +11,7 @@ return {
     -- mappings seen under group name "Buffer"
     ["<M-w>"] = { function() closeWindowOrBuffer() end, desc = "Close current window/split" },
     ["<M-q>"] = { "<cmd>qa!<CR>", desc = "quit nvim" },
+    ["<M-j>"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
 
     -- Tab
     ["tx"] = { "<cmd>tabclose<cr>", desc = "close current tab" },
@@ -92,11 +93,11 @@ return {
     ["<C-q>"] = { "<cmd>SessionManager load_session<CR>", desc = "Load session" }, -- <!>load_session
     ["<C-M-p>"] = { "<cmd>Telescope commands<CR>", desc = "Find commands" },
 
-    -- Test KeyStroke
-    ["<C-M-m>"] = { '<cmd>lua vim.notify("heihei")<CR>' }, -- command+control+m
-    ["<M-m>"] = { '<cmd>lua vim.notify("haha")<CR>' }, -- command+m
-    ["<M-I>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }, -- alt + shift + i --> tab + i --> by karabiner
-    ["<C-I>"] = { '<cmd>lua vim.notify("C-I")<CR>' },
+    -- -- Test KeyStroke
+    -- ["<C-M-m>"] = { '<cmd>lua vim.notify("heihei")<CR>' }, -- command+control+m
+    -- ["<M-m>"] = { '<cmd>lua vim.notify("haha")<CR>' }, -- command+m
+    -- ["<M-I>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }, -- alt + shift + i --> tab + i --> by karabiner
+    -- ["<C-I>"] = { '<cmd>lua vim.notify("C-I")<CR>' },
 
     ["<C-\\>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
 
@@ -114,10 +115,10 @@ return {
     ["<C-q>"] = { "<cmd>SessionManager load_session<CR>", desc = "Load session" }, -- <!>load_session
     ["<M-P>"] = { "<cmd>Telescope commands<CR>", desc = "Find commands" },
 
-    [";;"] = { " := ", desc = "golang: assign value" },
-    [";a"] = { " != ", desc = "!=" },
-    [";s"] = { " += ", desc = "+=" },
-    [";d"] = { " == ", desc = "==" },
+    -- [";;"] = { " := ", desc = "golang: assign value" },
+    -- [";a"] = { " != ", desc = "!=" },
+    -- [";s"] = { " += ", desc = "+=" },
+    -- [";d"] = { " == ", desc = "==" },
   },
   v = {
     ["<leader>dd"] = { "<cmd> DiffviewFileHistory<cr>", desc = "Diff file history" },

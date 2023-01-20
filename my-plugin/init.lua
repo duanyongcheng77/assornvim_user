@@ -3,7 +3,7 @@ local actions = require "telescope.actions"
 local M = {
   init = {
     -- ❌ Disable default
-    ["goolord/alpha-nvim"] = { disable = true },
+    ["goolord/alpha-nvim"] = { disable = false },
 
     -- 👻 Add by me
     ["melkster/modicator.nvim"] = {
